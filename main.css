@@ -1,0 +1,61 @@
+.frame {
+    margin: 0 auto;
+    display: block;
+}
+
+.center {
+    margin: 0 auto;
+    display: block;
+    width: 370px;
+    height: 370px;
+    background-color: rgb(51,72,95);
+    border-radius: 20px;
+}
+
+/* Text */
+
+.normal {
+    color:white;
+}
+
+.small {
+    color:white;
+}
+
+svg {
+    margin: 0 auto;
+    display: block;
+}
+
+/* Large Center Circle */
+
+/* BIG circle */
+
+circle.main {
+    width: 115px;
+    height: 115px;
+    color:none;
+}
+
+/* Progess bar */
+
+circle.progress {
+    stroke-width: 10px;
+    stroke-linecap: round;
+    stroke: rgb(27,42,51);
+}
+
+circle.progress:after {
+    stroke-width: 10px;
+    stroke: rgb(38,224,180);
+    z-index: 2;
+}
+
+
+
+/* smaller circles */
+
+.circles-small {
+    display: inline;
+    width:100%;
+}

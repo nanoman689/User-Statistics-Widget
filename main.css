@@ -10,6 +10,7 @@
     height: 370px;
     background-color: rgb(51,72,95);
     border-radius: 20px;
+    text-align: center;
 }
 
 /* Text */
@@ -25,6 +26,7 @@
 svg {
     margin: 0 auto;
     display: block;
+    fill:rgb(51,72,95);
 }
 
 /* Large Center Circle */
@@ -34,7 +36,7 @@ svg {
 circle.main {
     width: 115px;
     height: 115px;
-    color:none;
+    fill: rgb(51,72,95);
 }
 
 /* Progess bar */
@@ -44,13 +46,6 @@ circle.progress {
     stroke-linecap: round;
     stroke: rgb(27,42,51);
 }
-
-circle.progress:after {
-    stroke-width: 10px;
-    stroke: rgb(38,224,180);
-    z-index: 2;
-}
-
 
 
 /* smaller circles */

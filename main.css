@@ -1,8 +1,29 @@
+* {
+    font-family: sans-serif;
+}
+
 .frame {
     margin: 0 auto;
     display: block;
 }
 
+.headline .small {
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 1.85px;
+    font-size:0.75em;
+}
+
+.headline .normal {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size:1.5em;
+}
+
+.headline {
+    position: relative;
+    top: 10px;
+}
 .center {
     margin: 0 auto;
     display: block;
@@ -24,33 +45,69 @@
 }
 
 svg {
-    margin: 0 auto;
-    display: block;
-    fill:rgb(51,72,95);
+    fill: transparent;
 }
 
 /* Large Center Circle */
 
 /* BIG circle */
 
-circle.main {
-    width: 115px;
+svg circle.main {
+    stroke-width: 10px;
+    stroke: rgb(27,42,51);
+    margin: 0 auto;
+    display: block;
+    fill:transparent;
+    widows: 115px;
     height: 115px;
-    fill: rgb(51,72,95);
 }
 
 /* Progess bar */
 
 circle.progress {
+    stroke-dasharray:113;
     stroke-width: 10px;
     stroke-linecap: round;
-    stroke: rgb(27,42,51);
+    stroke: rgb(36,224,180);
 }
 
+/* BIG circle */
+
+.circle-big {
+    position: relative;
+    left:25%;
+}
 
 /* smaller circles */
 
 .circles-small {
     display: inline;
     width:100%;
+    position: relative;
+    left: 25%;
+}
+
+.circles-small .text {
+    position: absolute;
+    
+}
+
+/* BIG circle text */
+
+.circle-big .text .normal,
+.circle-big .text .small {
+    position: relative;
+    top: -121px;
+    left: -92px;
+    display: block;
+}
+
+/* small circle text */
+
+.circle-small .text .normal,
+.circle-small .text .small {
+    position: relative;
+    top: -128px;
+    right:-46px;
+    display: block;
 }
